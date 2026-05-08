@@ -3,10 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <meta name="description" content="HLL335 的个人网站，包含作品、技能、联系入口和主题切换。">
+    <title>HLL335 | 个人网站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-    <h1>你好，世界！</h1>
-    <p>欢迎来到我的第一个个人网站。这里是使用 GitHub Pages 搭建的。</p>
+    <div class="progress" id="progressBar"></div>
+    <main class="page">
+        <header class="topbar reveal">
+            <a class="brand" href="#home" aria-label="返回首页">
+                <span class="brand-mark">H</span>
+                <span>HLL335 · 个人主页</span>
+            </a>
+            <nav class="nav" aria-label="主导航">
+                <a href="#about">关于我</a>
+                <a href="#skills">技能</a>
+                <a href="#projects">作品</a>
+                <a href="#contact">联系</a>
+                <button class="theme-toggle" id="themeToggle" type="button">切换主题</button>
+            </nav>
+        </header>
+
+        <section class="hero" id="home">
+            <article class="hero-copy reveal">
+                <span class="eyebrow">个人品牌展示 · 作品集 · 联系入口</span>
+                <h1>把自己的经历、能力和作品，整理成一个有记忆点的网站。</h1>
+                <p class="lead">
+                    这是一个可直接部署到 GitHub Pages 的个人网站模板，包含首页介绍、技能展示、项目作品、时间线、联系表单和明暗主题切换。你可以把它当作个人名片、作品集或简历入口来使用。
+                </p>
+                <div class="actions">
+                    <a class="button primary" href="#projects">查看作品</a>
+                    <a class="button secondary" href="#contact">联系我</a>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <strong>06+</strong>
+                        <span>模块化内容区</span>
+                    </div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>纯前端可运行</span>
+                    </div>
+                    <div class="stat">
+                        <strong>2 主题</strong>
+                        <span>支持明暗模式</span>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="hero-panel reveal">
+                <div class="portrait">
+                    <div class="avatar">H</div>
+                    <div>
+                        <strong>你好，我是 HLL335</strong>
+                        <p>我专注于把创意、技术和表达整合成能被快速理解的数字作品。</p>
+                    </div>
+                </div>
+                <div class="quick-grid">
+                    <div class="quick-item">
+                        <span>当前状态</span>
+                        <strong>开放接单 / 学习中</strong>
+                    </div>
+                    <div class="quick-item">
+                        <span>所在地</span>
+                        <strong>可写你的城市</strong>
+                    </div>
+                    <div class="quick-item">
+                        <span>兴趣方向</span>
+                        <strong>前端 · 设计 · 交互</strong>
+                    </div>
+                    <div class="quick-item">
+                        <span>联系偏好</span>
+                        <strong>邮件 / 社交平台</strong>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-head reveal">
+                <div>
+                    <span class="eyebrow">关于我</span>
+                    <h2 style="margin-top: 14px; font-size: clamp(2rem, 4vw, 3rem);">用最少的内容，把最重要的自己讲清楚。</h2>
+                </div>
+                <p>这里适合放你的简介、当前方向、求职目标或对外合作说明。页面内容已经按个人站常见用途整理好，后续只需要替换文案即可。</p>
+            </div>
+
+            <div class="section-card about-grid reveal">
+                <div>
+                    <ul class="about-list">
+                        <li>
+                            <strong>个人简介</strong>
+                            <p>写 3 到 5 句，说明你是谁、擅长什么、现在关注什么方向，以及你想为别人解决什么问题。</p>
+                        </li>
+                        <li>
+                            <strong>我的优势</strong>
+                            <p>可以强调执行力、学习速度、沟通能力、审美能力、工程化能力或跨学科协作经验。</p>
+                        </li>
+                        <li>
+                            <strong>目前目标</strong>
+                            <p>例如寻找实习、承接项目、准备作品集、整理技术博客，或记录个人成长路线。</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="timeline">
+                        <li>
+                            <strong>2026</strong>
+                            <p>完善个人主页，加入项目展示、联系表单和主题切换功能。</p>
+                        </li>
+                        <li>
+                            <strong>2025</strong>
+                            <p>开始整理作品集和个人资料，形成可持续更新的在线名片。</p>
+                        </li>
+                        <li>
+                            <strong>更早之前</strong>
+                            <p>积累基础能力、兴趣方向和内容素材，为长期展示做准备。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-head reveal">
+                <div>
+                    <span class="eyebrow">技能</span>
+                    <h2 style="margin-top: 14px; font-size: clamp(2rem, 4vw, 3rem);">把你的能力变成别人一眼能看懂的结构。</h2>
+                </div>
+                <p>技能模块适合展示语言、工具、设计能力或业务能力。这里用进度条和简短说明，方便快速阅读。</p>
+            </div>
+
+            <div class="section-card skill-bars reveal">
+                <div class="skill-card">
+                    <div class="row"><strong>HTML / CSS</strong><span>90%</span></div>
+                    <div class="meter"><span style="width: 90%;"></span></div>
+                </div>
+                <div class="skill-card">
+                    <div class="row"><strong>JavaScript</strong><span>82%</span></div>
+                    <div class="meter"><span style="width: 82%;"></span></div>
+                </div>
+                <div class="skill-card">
+                    <div class="row"><strong>内容表达与设计</strong><span>88%</span></div>
+                    <div class="meter"><span style="width: 88%;"></span></div>
+                </div>
+                <div class="skill-card">
+                    <div class="row"><strong>协作与交付</strong><span>85%</span></div>
+                    <div class="meter"><span style="width: 85%;"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-head reveal">
+                <div>
+                    <span class="eyebrow">作品</span>
+                    <h2 style="margin-top: 14px; font-size: clamp(2rem, 4vw, 3rem);">用几个代表性项目，证明你的能力边界。</h2>
+                </div>
+                <p>每个卡片都可以替换成你的真实项目。建议保留项目名、技术栈、亮点和链接，便于访问者快速判断是否值得深入了解。</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card reveal">
+                    <div class="tag-row">
+                        <span class="tag">网站</span>
+                        <span class="tag">响应式</span>
+                    </div>
+                    <h3>个人主页重构</h3>
+                    <p>从一个简单的欢迎页升级为完整单页站点，包含导航、主题切换、作品展示和联系入口。</p>
+                    <div class="project-foot">
+                        <span>亮点：信息结构清晰</span>
+                        <a class="button secondary" href="#contact">联系合作</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="tag-row">
+                        <span class="tag">前端</span>
+                        <span class="tag">交互</span>
+                    </div>
+                    <h3>可视化作品页</h3>
+                    <p>适合展示数据图表、摄影作品、插画集或开发案例，用统一卡片和标签系统组织内容。</p>
+                    <div class="project-foot">
+                        <span>亮点：易于扩展</span>
+                        <a class="button secondary" href="#about">查看介绍</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="tag-row">
+                        <span class="tag">个人品牌</span>
+                        <span class="tag">内容运营</span>
+                    </div>
+                    <h3>长期更新计划</h3>
+                    <p>围绕博客、作品集、联系方式和社交账号建立统一入口，持续沉淀可搜索的个人资料。</p>
+                    <div class="project-foot">
+                        <span>亮点：便于维护</span>
+                        <a class="button secondary" href="#home">返回顶部</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="section-head reveal">
+                <div>
+                    <span class="eyebrow">联系</span>
+                    <h2 style="margin-top: 14px; font-size: clamp(2rem, 4vw, 3rem);">把访问者变成可以继续沟通的人。</h2>
+                </div>
+                <p>联系区提供了表单和外部入口。由于这是静态站点，表单会生成邮件链接，适合 GitHub Pages 直接使用。</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card reveal">
+                    <form id="contactForm">
+                        <label>
+                            你的名字
+                            <input name="name" type="text" placeholder="请输入你的名字" required>
+                        </label>
+                        <label>
+                            你的邮箱
+                            <input name="email" type="email" placeholder="name@example.com" required>
+                        </label>
+                        <label>
+                            想说的话
+                            <textarea name="message" placeholder="描述你的需求、合作意向或想聊的内容" required></textarea>
+                        </label>
+                        <button class="button primary" type="submit">发送消息</button>
+                    </form>
+                </div>
+
+                <div class="contact-card reveal">
+                    <h3>其他联系方式</h3>
+                    <p style="margin-top: 10px;">把下面内容替换成你的真实社交账号、博客、GitHub 或邮箱。</p>
+                    <div class="contact-links" style="margin-top: 18px;">
+                        <a class="contact-link" href="mailto:hello@example.com">
+                            <div>
+                                <strong>邮箱</strong>
+                                <span>hello@example.com</span>
+                            </div>
+                            <span>发送邮件</span>
+                        </a>
+                        <a class="contact-link" href="https://github.com/" target="_blank" rel="noreferrer">
+                            <div>
+                                <strong>GitHub</strong>
+                                <span>代码与项目仓库</span>
+                            </div>
+                            <span>打开链接</span>
+                        </a>
+                        <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                            <div>
+                                <strong>社交主页</strong>
+                                <span>适合展示职业信息</span>
+                            </div>
+                            <span>打开链接</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer reveal">
+            <span>© <span id="year"></span> HLL335. 个人网站模板。</span>
+            <a href="#home">回到首页</a>
+        </footer>
+    </main>
 </body>
 </html>
